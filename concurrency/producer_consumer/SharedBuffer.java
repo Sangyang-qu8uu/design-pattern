@@ -3,6 +3,7 @@ package producer_consumer;
 import java.util.LinkedList;
 
 /**
+ * 共享的缓冲区
  * @author nisang
  * 2024/1/13 20:59
  * @version 1.0
