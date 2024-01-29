@@ -15,7 +15,8 @@ import org.slf4j.LoggerFactory;
 public class CalculatorDivide implements Calculator {
     private static final Logger logger = LoggerFactory.getLogger(CalculatorDivide.class);
     @Override
-    public void calculate(double s1, double s2) {
+    public double getResult(double s1, double s2) {
         logger.info("计算结果:{}",s1%s2);
+        return s1%s2;
     }
 }

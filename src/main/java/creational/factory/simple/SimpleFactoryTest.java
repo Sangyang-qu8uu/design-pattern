@@ -25,7 +25,7 @@ public class SimpleFactoryTest {
         logger.info("请输入运算符");
         String s3 = sc.next();
 
-        Calculator calculator= SimpleFactory.createProduct(s3);
-        calculator.calculate(s1,s2);
+        Calculator calculator= SimpleFactory.createOperate(s3);
+        calculator.getResult(s1,s2);
     }
 }
