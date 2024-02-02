@@ -1,7 +1,7 @@
 package creational.factory.simple;
 
 
-import creational.contants.CreateConstant;
+import contants.Constant;
 
 /**
  * 简单工厂类，负责根据计算器类型创建具体实例
@@ -22,20 +22,20 @@ public class SimpleFactory {
     public static Calculator createOperate(String type) {
         Calculator calculator;
         switch (type) {
-            case CreateConstant.ADD:
+            case Constant.ADD:
                 calculator = new CalculatorAdd();
                 break;
-            case CreateConstant.SUBTRACT:
+            case Constant.SUBTRACT:
                 calculator = new CalculatorSubtract();
                 break;
-            case CreateConstant.MULTIPLY:
+            case Constant.MULTIPLY:
                 calculator = new CalculatorMultiply();
                 break;
-            case CreateConstant.DIVIDE:
+            case Constant.DIVIDE:
                 calculator = new CalculatorDivide();
                 break;
             default:
-                throw new IllegalArgumentException(CreateConstant.INVALID_PRODUCT_TYPE);
+                throw new IllegalArgumentException(Constant.INVALID_PRODUCT_TYPE);
         }
         return calculator;
     }

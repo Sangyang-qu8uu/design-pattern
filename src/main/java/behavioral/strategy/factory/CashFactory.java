@@ -1,5 +1,10 @@
 package behavioral.strategy.factory;
 
+import behavioral.strategy.factory.impl.CashNormal;
+import behavioral.strategy.factory.impl.CashRebate;
+import behavioral.strategy.factory.impl.CashReturn;
+import contants.Constant;
+
 /**
  * 收费工厂
  *
@@ -13,13 +18,13 @@ public class CashFactory {
     public static AbstractCashSuper createCashAccept(int cashType) {
         AbstractCashSuper cashSuper = null;
         switch (cashType) {
-            case 1:
+            case Constant.CASH_STRATEGY_NORMAL:
                 cashSuper = new CashNormal();
                 break;
-            case 2:
+            case Constant.CASH_STRATEGY_REBATE:
                 cashSuper = new CashRebate(0.8d);
                 break;
-            case 3:
+            case Constant.CASH_STRATEGY_RETURN:
                 cashSuper = new CashReturn(300,20);
                 break;
             default:

@@ -1,9 +1,10 @@
-package behavioral.strategy;
+package behavioral.strategy.context;
 
 import behavioral.strategy.factory.AbstractCashSuper;
-import behavioral.strategy.factory.CashNormal;
-import behavioral.strategy.factory.CashRebate;
-import behavioral.strategy.factory.CashReturn;
+import behavioral.strategy.factory.impl.CashNormal;
+import behavioral.strategy.factory.impl.CashRebate;
+import behavioral.strategy.factory.impl.CashReturn;
+import contants.Constant;
 
 /**
  * 上下文获取折扣类型
@@ -24,13 +25,13 @@ public class CashContext {
      */
     public CashContext(int cashType) {
         switch (cashType) {
-            case 1:
+            case Constant.CASH_STRATEGY_NORMAL:
                 this.abstractCashSuper = new CashNormal();
                 break;
-            case 2:
+            case Constant.CASH_STRATEGY_REBATE:
                 this.abstractCashSuper = new CashRebate(100);
                 break;
-            case 3:
+            case Constant.CASH_STRATEGY_RETURN:
                 this.abstractCashSuper = new CashReturn(200, 20);
                 break;
             default:

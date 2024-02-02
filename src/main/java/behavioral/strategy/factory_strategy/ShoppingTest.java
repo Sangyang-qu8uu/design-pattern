@@ -1,5 +1,6 @@
-package behavioral.strategy;
+package behavioral.strategy.factory_strategy;
 
+import behavioral.strategy.context.CashContext;
 import behavioral.strategy.factory.CashTest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

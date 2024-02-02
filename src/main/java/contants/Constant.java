@@ -1,13 +1,13 @@
-package creational.contants;
+package contants;
 
 /**
- * 创造型模式常量constant
+ * 常量constant
  * @author nisang
  * 2024/1/28 15:04
  * @version 1.0
  * Ruoyi-Cloud-Plus开发小组
  */
-public class CreateConstant {
+public class Constant {
     /**
      * 加
      */
@@ -37,4 +37,26 @@ public class CreateConstant {
      * 产品a被创建
      */
     public static final String PRODUCT_A_CREATED = "Product A created.";
+    /**
+     * 策略1，原价
+     */
+    public static final int CASH_STRATEGY_NORMAL = 1;
+    /**
+     * 策略2，满足条件打折
+     */
+    public static final int CASH_STRATEGY_REBATE =2;
+    /**
+     * 策略,满减返钱
+     */
+    public static final int CASH_STRATEGY_RETURN = 3;
+
+    /**
+     * 策略4，满减返钱，再打折
+     */
+    public static final int CASH_STRATEGY_RETURN_REBATE = 4;
+
+    /**
+     * 策略5，先打折,再满减返钱，
+     */
+    public static final int CASH_STRATEGY_REBATE_RETURN = 5;
 }

@@ -1,4 +1,6 @@
-package behavioral.strategy.factory;
+package behavioral.strategy.factory.impl;
+
+import behavioral.strategy.factory.AbstractCashSuper;
 
 /**
  * 打折类

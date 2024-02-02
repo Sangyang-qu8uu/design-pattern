@@ -1,7 +1,6 @@
 package creational.factory.factorymethod;
 
-import creational.contants.CreateConstant;
-import creational.factory.simple.CalculatorAdd;
+import contants.Constant;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +14,6 @@ public class ConcreteProductB implements Product {
     private static final Logger logger = LoggerFactory.getLogger(ConcreteProductB.class);
     @Override
     public void create() {
-        logger.info(CreateConstant.PRODUCT_B_CREATED);
+        logger.info(Constant.PRODUCT_B_CREATED);
     }
 }

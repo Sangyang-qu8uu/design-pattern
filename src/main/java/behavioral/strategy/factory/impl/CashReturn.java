@@ -1,4 +1,6 @@
-package behavioral.strategy.factory;
+package behavioral.strategy.factory.impl;
+
+import behavioral.strategy.factory.AbstractCashSuper;
 
 /**
  * 消费返现类
@@ -21,8 +23,8 @@ public class CashReturn extends AbstractCashSuper {
     /**
      * 返利条件：消费200 减20块钱
      *
-     * @param moneyCondition
-     * @param moneyReturn
+     * @param moneyCondition 消费金额条件
+     * @param moneyReturn    返现值
      */
     public CashReturn(double moneyCondition, double moneyReturn) {
         this.moneyCondition = moneyCondition;

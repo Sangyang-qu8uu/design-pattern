@@ -1,4 +1,6 @@
-package behavioral.strategy.factory;
+package behavioral.strategy.factory.impl;
+
+import behavioral.strategy.factory.AbstractCashSuper;
 
 /**
  * 正常收费
