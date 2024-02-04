@@ -1,5 +1,11 @@
 package creational.factory.factorymethod;
 
+import creational.factory.factorymethod.factory.OperationFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.Scanner;
+
 /**
  * 工厂方法
  * 工厂方法模式优点 :
@@ -20,16 +26,19 @@ package creational.factory.factorymethod;
  * Ruoyi-Cloud-Plus开发小组
  */
 public class FactoryMethodTest {
-
+    private static final Logger logger = LoggerFactory.getLogger(FactoryMethodTest.class);
     public static void main(String[] args) {
-        // 使用具体工厂A创建产品A
-        ProductFactory factoryA = new ConcreteProductAfactory();
-        Product productA = factoryA.createProduct();
-        productA.create();
+        Scanner sc = new Scanner(System.in);
 
-        // 使用具体工厂B创建产品B
-        ProductFactory factoryB = new ConcreteProductBfactory();
-        Product productB = factoryB.createProduct();
-        productB.create();
+        logger.info("请输入第一个数");
+        double s1 = Double.parseDouble(sc.next());
+        logger.info("请输入第二个数");
+        double s2 = Double.parseDouble(sc.next());
+
+        logger.info("请输入运算符");
+        String s3 = sc.next();
+
+        Operation operate = OperationFactory.createOperate(s3);
+        operate.getResult(s1,s2);
     }
 }

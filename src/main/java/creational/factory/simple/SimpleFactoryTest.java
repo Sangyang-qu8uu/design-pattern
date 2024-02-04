@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 /**
  * 简单工厂模式
+ *
  * @author nisang
  * 2024/1/13 11:42
  * @version 1.0
@@ -14,6 +15,7 @@ import java.util.Scanner;
  */
 public class SimpleFactoryTest {
     private static final Logger logger = LoggerFactory.getLogger(SimpleFactoryTest.class);
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -25,7 +27,8 @@ public class SimpleFactoryTest {
         logger.info("请输入运算符");
         String s3 = sc.next();
 
-        Calculator calculator= SimpleFactory.createOperate(s3);
-        calculator.getResult(s1,s2);
+        Calculator calculator = SimpleFactory.createOperate(s3);
+        calculator.getResult(s1, s2);
+
     }
 }

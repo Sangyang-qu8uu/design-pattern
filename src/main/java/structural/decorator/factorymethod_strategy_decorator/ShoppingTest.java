@@ -1,10 +1,10 @@
-package structural.decorator.factory_strategy_decorator;
+package structural.decorator.factorymethod_strategy_decorator;
 
 import behavioral.strategy.factory.CashTest;
 import contants.Constant;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import structural.decorator.factory_strategy_decorator.context.CashContext;
+import structural.decorator.factorymethod_strategy_decorator.context.CashContext;
 
 /**
  * 使用策略+工厂+装饰者模式

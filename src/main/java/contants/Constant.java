@@ -25,6 +25,14 @@ public class Constant {
      */
     public static final String DIVIDE = "%";
     /**
+     * 指数
+     */
+    public static final String POW = "pow";
+    /**
+     * 对数
+     */
+    public static final String LOG = "log";
+    /**
      * 无效指令
      */
     public static final String INVALID_PRODUCT_TYPE = "Invalid product type";

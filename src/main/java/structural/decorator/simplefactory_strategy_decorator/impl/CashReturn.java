@@ -1,6 +1,6 @@
-package structural.decorator.factory_strategy_decorator.impl;
+package structural.decorator.simplefactory_strategy_decorator.impl;
 
-import structural.decorator.factory_strategy_decorator.CashSuperDecorator;
+import structural.decorator.simplefactory_strategy_decorator.CashSuperDecorator;
 
 /**
  * 消费返现类

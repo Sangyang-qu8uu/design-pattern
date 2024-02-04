@@ -1,10 +1,10 @@
-package structural.decorator.factory_strategy_decorator.context;
+package structural.decorator.simplefactory_strategy_decorator.context;
 
 import contants.Constant;
-import structural.decorator.factory_strategy_decorator.Sale;
-import structural.decorator.factory_strategy_decorator.impl.CashNormal;
-import structural.decorator.factory_strategy_decorator.impl.CashRebate;
-import structural.decorator.factory_strategy_decorator.impl.CashReturn;
+import structural.decorator.simplefactory_strategy_decorator.Sale;
+import structural.decorator.simplefactory_strategy_decorator.impl.CashNormal;
+import structural.decorator.simplefactory_strategy_decorator.impl.CashRebate;
+import structural.decorator.simplefactory_strategy_decorator.impl.CashReturn;
 
 /**
  * 上下文获取折扣类型

@@ -1,4 +1,4 @@
-package structural.decorator.factory_strategy_decorator;
+package structural.decorator.simplefactory_strategy_decorator;
 
 /**
  * @author nisang
