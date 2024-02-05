@@ -67,4 +67,16 @@ public class Constant {
      * 策略5，先打折,再满减返钱，
      */
     public static final int CASH_STRATEGY_REBATE_RETURN = 5;
+    /**
+     * 工厂对象路径
+     */
+    public static final String ASSEMBLY_NAME =  "structural.decorator.factorymethod_strategy_decorator.factory.";
+    /**
+     * data配置文件
+     */
+    public static final String DATA_PROPERTIES =  "data.properties";
+    /**
+     * 策略值
+     */
+    public static final String STRATEGY =  "strategy";
 }
