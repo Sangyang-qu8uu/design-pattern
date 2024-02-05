@@ -21,7 +21,7 @@ public class CashContext {
     /**
      * 策略跟工厂模式结合
      *
-     * @param cashType
+     * @param cashType 工厂类型
      */
     public CashContext(int cashType) {
         SaleFactory fs = null;
