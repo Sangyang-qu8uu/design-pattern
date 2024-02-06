@@ -1,14 +1,17 @@
-package behavioral.chain;
+package behavioral.chain.impl;
+
+import behavioral.chain.Approver;
+import behavioral.chain.Expense;
 
 /**
- *  具体处理者类 - 经理
+ * 具体处理者类 - 主管
  * @author nisang
- * 2024/1/13 20:29
+ * 2024/1/13 20:28
  * @version 1.0
  * Ruoyi-Cloud-Plus开发小组
  */
-public class Manager implements Approver {
-    private static final double MAX_APPROVAL_AMOUNT = 5000;
+public class Supervisor implements Approver {
+    private static final double MAX_APPROVAL_AMOUNT = 1000;
 
     private Approver nextApprover;
 
@@ -19,7 +22,7 @@ public class Manager implements Approver {
     @Override
     public void processRequest(Expense expense) {
         if (expense.getAmount() <= MAX_APPROVAL_AMOUNT) {
-            System.out.println("Manager approves the expense.");
+            System.out.println("Supervisor approves the expense.");
         } else if (nextApprover != null) {
             nextApprover.processRequest(expense);
         } else {

@@ -1,4 +1,7 @@
-package behavioral.chain;
+package behavioral.chain.impl;
+
+import behavioral.chain.Approver;
+import behavioral.chain.Expense;
 
 /**
  * 具体处理者类 - 部门领导

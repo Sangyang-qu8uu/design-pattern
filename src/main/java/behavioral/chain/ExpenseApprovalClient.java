@@ -1,5 +1,9 @@
 package behavioral.chain;
 
+import behavioral.chain.impl.DepartmentHead;
+import behavioral.chain.impl.Manager;
+import behavioral.chain.impl.Supervisor;
+
 /**
  * @author nisang
  * 2024/1/13 20:29
